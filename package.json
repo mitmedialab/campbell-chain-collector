@@ -1,0 +1,22 @@
+{
+  "name": "campbellchain",
+  "version": "1.0.0",
+  "description": "Bridge between Campbell Scientific dataloggers and Chain API",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brian Mayton <bmayton@media.mit.edu>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mitmedialab/campbell-chain-collector"
+  },
+  "dependencies": {
+    "chainclient": "^0.3.0",
+    "node-cron": "^2.0.3",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5",
+    "url-transformers": "0.0.2"
+  }
+}

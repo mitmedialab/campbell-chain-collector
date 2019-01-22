@@ -1,0 +1,24 @@
+{
+    "chain": {
+        "auth": {
+            "username": "user",
+            "password": "secret"
+        }
+    },
+    "sources": [
+        {
+            "name": "wxstation",
+            "host": "http://localhost/",
+            "table": "TenMin",
+            "schedule": "15 0-59/10 * * * *",
+            "chainDevice": "http://chain-api.media.mit.edu/devices/25572"
+        },
+        {
+            "name": "soil",
+            "host": "http://localhost/",
+            "table": "Soil_10min",
+            "schedule": "15 0-59/10 * * * *",
+            "chainDevice": "http://chain-api.media.mit.edu/devices/25573"
+        }
+    ]
+}
