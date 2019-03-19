@@ -85,7 +85,10 @@ class CampbellSource {
         let vals = response.data[0].vals;
         let fields = response.head.fields;
         let time = response.data[0].time;
-        let timestamp = new Date(Date.parse(time)); // local time :(
+        if(self.config.tzOffset !== undefined) {
+            time += self.config.tzOffset;
+        }
+        let timestamp = new Date(Date.parse(time)); 
 
         if(self.chainDevice !== undefined) {
             let sensors = await self.chainDevice.rel('ch:sensors');
